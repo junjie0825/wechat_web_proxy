@@ -1,4 +1,5 @@
 import peewee_async
+import config
 
 
 def singleton(cls):
@@ -15,3 +16,6 @@ def singleton(cls):
 @singleton
 class PooledMySQLDatabase(peewee_async.PooledMySQLDatabase):
     pass
+
+
+database = PooledMySQLDatabase(**config.mysql_option)

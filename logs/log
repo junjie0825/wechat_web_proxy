@@ -1,554 +1,97 @@
-[E 180423 16:19:03 Passport:7] error msg
-[W 180423 16:19:03 Passport:9] warning msg
-[E 180423 16:20:10 Passport:7] error msg
-[W 180423 16:20:10 Passport:9] warning msg
-[E 180423 16:20:11 Passport:7] error msg
-[W 180423 16:20:11 Passport:9] warning msg
-[E 180423 16:20:11 Passport:7] error msg
-[W 180423 16:20:11 Passport:9] warning msg
-[E 180423 16:20:11 Passport:7] error msg
-[W 180423 16:20:11 Passport:9] warning msg
-[E 180423 16:20:11 Passport:7] error msg
-[W 180423 16:20:11 Passport:9] warning msg
-[E 180423 16:20:11 Passport:7] error msg
-[W 180423 16:20:11 Passport:9] warning msg
-[E 180423 16:21:06 Passport:7] error msg
-[I 180423 16:21:06 Passport:8] info msg
-[W 180423 16:21:06 Passport:9] warning msg
-[D 180423 16:21:06 Passport:10] error msg
-[I 180423 16:21:06 web:1946] 304 GET / (127.0.0.1) 1.65ms
-[E 180423 16:21:06 Passport:7] error msg
-[I 180423 16:21:06 Passport:8] info msg
-[W 180423 16:21:06 Passport:9] warning msg
-[D 180423 16:21:06 Passport:10] error msg
-[I 180423 16:21:06 web:1946] 304 GET / (127.0.0.1) 0.88ms
-[E 180423 16:21:07 Passport:7] error msg
-[I 180423 16:21:07 Passport:8] info msg
-[W 180423 16:21:07 Passport:9] warning msg
-[D 180423 16:21:07 Passport:10] error msg
-[I 180423 16:21:07 web:1946] 304 GET / (127.0.0.1) 0.96ms
-[E 180423 16:21:07 Passport:7] error msg
-[I 180423 16:21:07 Passport:8] info msg
-[W 180423 16:21:07 Passport:9] warning msg
-[D 180423 16:21:07 Passport:10] error msg
-[I 180423 16:21:07 web:1946] 304 GET / (127.0.0.1) 0.84ms
-[E 180423 16:21:07 Passport:7] error msg
-[I 180423 16:21:07 Passport:8] info msg
-[W 180423 16:21:07 Passport:9] warning msg
-[D 180423 16:21:07 Passport:10] error msg
-[I 180423 16:21:07 web:1946] 304 GET / (127.0.0.1) 0.78ms
-[E 180423 16:21:07 Passport:7] error msg
-[I 180423 16:21:07 Passport:8] info msg
-[W 180423 16:21:07 Passport:9] warning msg
-[D 180423 16:21:07 Passport:10] error msg
-[I 180423 16:21:07 web:1946] 304 GET / (127.0.0.1) 0.83ms
-[E 180423 16:21:07 Passport:7] error msg
-[I 180423 16:21:07 Passport:8] info msg
-[W 180423 16:21:07 Passport:9] warning msg
-[D 180423 16:21:07 Passport:10] error msg
-[I 180423 16:21:07 web:1946] 304 GET / (127.0.0.1) 1.18ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.96ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.84ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 1.05ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 1.00ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.70ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.95ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.84ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 1.74ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 1.22ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.79ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.83ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.73ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 1.17ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.79ms
-[E 180423 16:21:08 Passport:7] error msg
-[I 180423 16:21:08 Passport:8] info msg
-[W 180423 16:21:08 Passport:9] warning msg
-[D 180423 16:21:08 Passport:10] error msg
-[I 180423 16:21:08 web:1946] 304 GET / (127.0.0.1) 0.95ms
-[E 180423 16:22:42 Passport:7] error msg
-[I 180423 16:22:42 Passport:8] info msg
-[W 180423 16:22:42 Passport:9] warning msg
-[D 180423 16:22:42 Passport:10] error msg
-[I 180423 16:22:42 web:1946] 304 GET / (127.0.0.1) 0.97ms
-[E 180423 16:22:44 Passport:7] error msg
-[I 180423 16:22:44 Passport:8] info msg
-[W 180423 16:22:44 Passport:9] warning msg
-[D 180423 16:22:44 Passport:10] error msg
-[I 180423 16:22:44 web:1946] 304 GET / (127.0.0.1) 1.22ms
-[E 180423 16:22:44 Passport:7] error msg
-[I 180423 16:22:44 Passport:8] info msg
-[W 180423 16:22:44 Passport:9] warning msg
-[D 180423 16:22:44 Passport:10] error msg
-[I 180423 16:22:44 web:1946] 304 GET / (127.0.0.1) 1.16ms
-[E 180423 16:22:44 Passport:7] error msg
-[I 180423 16:22:44 Passport:8] info msg
-[W 180423 16:22:44 Passport:9] warning msg
-[D 180423 16:22:44 Passport:10] error msg
-[I 180423 16:22:44 web:1946] 304 GET / (127.0.0.1) 1.00ms
-[E 180423 16:22:44 Passport:7] error msg
-[I 180423 16:22:44 Passport:8] info msg
-[W 180423 16:22:44 Passport:9] warning msg
-[D 180423 16:22:44 Passport:10] error msg
-[I 180423 16:22:44 web:1946] 304 GET / (127.0.0.1) 0.90ms
-[E 180423 16:22:44 Passport:7] error msg
-[I 180423 16:22:44 Passport:8] info msg
-[W 180423 16:22:44 Passport:9] warning msg
-[D 180423 16:22:44 Passport:10] error msg
-[I 180423 16:22:44 web:1946] 304 GET / (127.0.0.1) 0.93ms
-[E 180423 16:22:45 Passport:7] error msg
-[I 180423 16:22:45 Passport:8] info msg
-[W 180423 16:22:45 Passport:9] warning msg
-[D 180423 16:22:45 Passport:10] error msg
-[I 180423 16:22:45 web:1946] 304 GET / (127.0.0.1) 0.85ms
-[E 180423 16:22:45 Passport:7] error msg
-[I 180423 16:22:45 Passport:8] info msg
-[W 180423 16:22:45 Passport:9] warning msg
-[D 180423 16:22:45 Passport:10] error msg
-[I 180423 16:22:45 web:1946] 304 GET / (127.0.0.1) 0.93ms
-[E 180423 16:22:45 Passport:7] error msg
-[I 180423 16:22:45 Passport:8] info msg
-[W 180423 16:22:45 Passport:9] warning msg
-[D 180423 16:22:45 Passport:10] error msg
-[I 180423 16:22:45 web:1946] 304 GET / (127.0.0.1) 1.11ms
-[E 180423 16:22:45 Passport:7] error msg
-[I 180423 16:22:45 Passport:8] info msg
-[W 180423 16:22:45 Passport:9] warning msg
-[D 180423 16:22:45 Passport:10] error msg
-[I 180423 16:22:45 web:1946] 304 GET / (127.0.0.1) 0.93ms
-[E 180423 16:22:45 Passport:7] error msg
-[I 180423 16:22:45 Passport:8] info msg
-[W 180423 16:22:45 Passport:9] warning msg
-[D 180423 16:22:45 Passport:10] error msg
-[I 180423 16:22:45 web:1946] 304 GET / (127.0.0.1) 0.97ms
-[D 180425 11:14:39 selector_events:65] Using selector: KqueueSelector
-[E 180425 11:15:04 web:1621] Uncaught exception GET /alex?id=3 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=3', version='HTTP/1.1', remote_ip='127.0.0.1')
+[D 180425 18:56:09 selector_events:65] Using selector: KqueueSelector
+[E 180425 18:56:14 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
         result = yield result
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
         value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 17, in get
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
         obj = await self.application.objects.get(TestNameModel, id=obj_id)
-    AttributeError: 'Application' object has no attribute 'objects'
-[E 180425 11:15:04 web:2106] 500 GET /alex?id=3 (127.0.0.1) 3.95ms
-[E 180425 11:15:16 web:1621] Uncaught exception GET /alex (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex', version='HTTP/1.1', remote_ip='127.0.0.1')
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
+        result = yield from self.execute(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
+        query = self._swap_database(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
+        query.database, self.database
+    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10f462c88> Manager: <utils.databases.PooledMySQLDatabase object at 0x10f1a1438>
+[E 180425 18:56:14 web:2106] 500 GET /alex?id=2 (127.0.0.1) 5.11ms
+[D 180425 18:58:43 selector_events:65] Using selector: KqueueSelector
+[E 180425 18:58:57 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
         result = yield result
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
         value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 17, in get
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
         obj = await self.application.objects.get(TestNameModel, id=obj_id)
-    AttributeError: 'Application' object has no attribute 'objects'
-[E 180425 11:15:16 web:2106] 500 GET /alex (127.0.0.1) 0.85ms
-[E 180425 11:15:26 Passport:7] error msg
-[I 180425 11:15:26 Passport:8] info msg
-[W 180425 11:15:26 Passport:9] warning msg
-[D 180425 11:15:26 Passport:10] error msg
-[I 180425 11:15:26 web:2106] 304 GET / (127.0.0.1) 0.92ms
-[E 180425 11:15:42 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
+        result = yield from self.execute(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
+        query = self._swap_database(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
+        query.database, self.database
+    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10317bc88> Manager: <utils.databases.PooledMySQLDatabase object at 0x102eba438>
+[E 180425 18:58:57 web:2106] 500 GET /alex?id=2 (127.0.0.1) 5.80ms
+[E 180425 18:58:58 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
         result = yield result
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
         value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 17, in get
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
         obj = await self.application.objects.get(TestNameModel, id=obj_id)
-    AttributeError: 'Application' object has no attribute 'objects'
-[E 180425 11:15:42 web:2106] 500 GET /alex?id=1 (127.0.0.1) 0.92ms
-[I 180425 11:16:26 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py modified; restarting server
-[D 180425 11:16:26 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:16:28 selector_events:65] Using selector: KqueueSelector
-[E 180425 11:16:30 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:16:30 web:2106] 500 GET /alex?id=1 (127.0.0.1) 2.70ms
-[E 180425 11:16:31 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:16:31 web:2106] 500 GET /alex?id=1 (127.0.0.1) 1.40ms
-[E 180425 11:16:31 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:16:31 web:2106] 500 GET /alex?id=1 (127.0.0.1) 1.22ms
-[E 180425 11:16:32 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:16:32 web:2106] 500 GET /alex?id=1 (127.0.0.1) 1.04ms
-[I 180425 11:17:15 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 11:17:15 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:17:18 selector_events:65] Using selector: KqueueSelector
-[E 180425 11:17:26 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:17:26 web:2106] 500 GET /alex?id=1 (127.0.0.1) 2.83ms
-[E 180425 11:17:27 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:17:27 web:2106] 500 GET /alex?id=1 (127.0.0.1) 1.03ms
-[I 180425 11:17:53 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 11:17:53 selector_events:65] Using selector: KqueueSelector
-[I 180425 11:18:49 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 11:18:49 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:19:25 selector_events:65] Using selector: KqueueSelector
-[E 180425 11:19:26 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.application.object.get(TestNameModel, id=obj_id)
-    AttributeError: 'Application' object has no attribute 'object'
-[E 180425 11:19:26 web:2106] 500 GET /alex?id=1 (127.0.0.1) 2.58ms
-[E 180425 11:19:27 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.application.object.get(TestNameModel, id=obj_id)
-    AttributeError: 'Application' object has no attribute 'object'
-[E 180425 11:19:27 web:2106] 500 GET /alex?id=1 (127.0.0.1) 0.92ms
-[I 180425 11:19:38 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py modified; restarting server
-[D 180425 11:19:38 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:19:41 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:19:42 peewee_async:1531] ('SELECT `t1`.`id`, `t1`.`name` FROM `testnamemodel` AS t1 WHERE (`t1`.`id` = %s)', ([1],), {})
-[I 180425 11:19:42 web:2106] 200 GET /alex?id=1 (127.0.0.1) 5.21ms
-[I 180425 11:21:00 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 11:21:01 selector_events:65] Using selector: KqueueSelector
-[I 180425 11:21:08 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py modified; restarting server
-[D 180425 11:21:08 selector_events:65] Using selector: KqueueSelector
-[I 180425 11:22:32 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 11:22:33 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:22:36 selector_events:65] Using selector: KqueueSelector
-[E 180425 11:22:38 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:22:38 web:2106] 500 GET /alex?id=1 (127.0.0.1) 2.60ms
-[E 180425 11:22:39 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:22:39 web:2106] 500 GET /alex?id=1 (127.0.0.1) 0.91ms
-[I 180425 11:23:39 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 11:23:39 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:23:42 selector_events:65] Using selector: KqueueSelector
-[E 180425 11:23:50 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:23:50 web:2106] 500 GET /alex?id=1 (127.0.0.1) 2.87ms
-[E 180425 11:23:52 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:23:52 web:2106] 500 GET /alex?id=1 (127.0.0.1) 0.99ms
-[E 180425 11:23:54 web:1621] Uncaught exception GET /alex?id=1 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=1', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 11:23:54 web:2106] 500 GET /alex?id=1 (127.0.0.1) 0.91ms
-[D 180425 11:24:04 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:24:15 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:24:16 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:24:23 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:24:24 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:24:25 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:24:40 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:25:14 selector_events:65] Using selector: KqueueSelector
-[I 180425 11:26:20 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 11:26:20 selector_events:65] Using selector: KqueueSelector
-[I 180425 11:26:32 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 11:26:32 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:26:33 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:26:35 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:26:43 selector_events:65] Using selector: KqueueSelector
-[D 180425 11:26:45 peewee_async:1531] ('SELECT `t1`.`id`, `t1`.`name` FROM `testnamemodel` AS t1 WHERE (`t1`.`id` = %s)', ([1],), {})
-[I 180425 11:26:45 web:2106] 200 GET /alex?id=1 (127.0.0.1) 4.25ms
-[W 180425 11:26:45 web:2106] 404 GET /favicon.ico (127.0.0.1) 1.74ms
-[I 180425 12:02:13 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 12:02:13 selector_events:65] Using selector: KqueueSelector
-[D 180425 13:47:38 selector_events:65] Using selector: KqueueSelector
-[E 180425 13:48:06 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
+        result = yield from self.execute(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
+        query = self._swap_database(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
+        query.database, self.database
+    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10317bc88> Manager: <utils.databases.PooledMySQLDatabase object at 0x102eba438>
+[E 180425 18:58:58 web:2106] 500 GET /alex?id=2 (127.0.0.1) 1.05ms
+[E 180425 18:58:59 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
     HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
         result = yield result
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
         value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py", line 23, in db
-        return self.application.db
-    AttributeError: 'Application' object has no attribute 'db'
-[E 180425 13:48:06 web:2106] 500 GET /alex?id=2 (127.0.0.1) 4.51ms
-[I 180425 13:48:49 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/BaseHandler.py modified; restarting server
-[D 180425 13:48:50 selector_events:65] Using selector: KqueueSelector
-[E 180425 13:48:53 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
+        obj = await self.application.objects.get(TestNameModel, id=obj_id)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
+        result = yield from self.execute(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
+        query = self._swap_database(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
+        query.database, self.database
+    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10317bc88> Manager: <utils.databases.PooledMySQLDatabase object at 0x102eba438>
+[E 180425 18:58:59 web:2106] 500 GET /alex?id=2 (127.0.0.1) 1.20ms
+[I 180425 18:59:53 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
+[D 180425 18:59:53 selector_events:65] Using selector: KqueueSelector
+[I 180425 19:00:34 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/base_model.py modified; restarting server
+[D 180425 19:00:34 selector_events:65] Using selector: KqueueSelector
+[E 180425 19:00:45 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
     HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
         result = yield result
       File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
         value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-    AttributeError: 'RootHandler' object has no attribute 'db'
-[E 180425 13:48:53 web:2106] 500 GET /alex?id=2 (127.0.0.1) 2.87ms
-[E 180425 13:48:55 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-    AttributeError: 'RootHandler' object has no attribute 'db'
-[E 180425 13:48:55 web:2106] 500 GET /alex?id=2 (127.0.0.1) 1.00ms
-[D 180425 13:48:58 selector_events:65] Using selector: KqueueSelector
-[E 180425 13:48:59 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 16, in get
-        obj = await self.db.get(TestNameModel, id=obj_id)
-    AttributeError: 'RootHandler' object has no attribute 'db'
-[E 180425 13:48:59 web:2106] 500 GET /alex?id=2 (127.0.0.1) 2.63ms
-[I 180425 13:54:05 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py modified; restarting server
-[D 180425 13:54:05 selector_events:65] Using selector: KqueueSelector
-[D 180425 13:54:07 selector_events:65] Using selector: KqueueSelector
-[E 180425 13:54:12 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1107, in run
-        yielded = self.gen.throw(*exc_info)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 19, in get
-        obj = yield TestNameModel(id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1187, in handle_yield
-        self.future = convert_yielded(yielded)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/functools.py", line 803, in wrapper
-        return dispatch(args[0].__class__)(*args, **kw)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1329, in convert_yielded
-        raise BadYieldError("yielded unknown object %r" % (yielded,))
-    tornado.gen.BadYieldError: yielded unknown object <models.test_name.TestNameModel object at 0x1077a9cc0>
-[E 180425 13:54:12 web:2106] 500 GET /alex?id=2 (127.0.0.1) 5.03ms
-[E 180425 13:54:14 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1107, in run
-        yielded = self.gen.throw(*exc_info)
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 19, in get
-        obj = yield TestNameModel(id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1187, in handle_yield
-        self.future = convert_yielded(yielded)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/functools.py", line 803, in wrapper
-        return dispatch(args[0].__class__)(*args, **kw)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1329, in convert_yielded
-        raise BadYieldError("yielded unknown object %r" % (yielded,))
-    tornado.gen.BadYieldError: yielded unknown object <models.test_name.TestNameModel object at 0x1077a9940>
-[E 180425 13:54:14 web:2106] 500 GET /alex?id=2 (127.0.0.1) 0.98ms
-[I 180425 13:59:30 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 13:59:30 selector_events:65] Using selector: KqueueSelector
-[I 180425 14:11:50 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/base_model.py modified; restarting server
-[D 180425 15:14:32 selector_events:65] Using selector: KqueueSelector
-[D 180425 15:14:37 peewee_async:1531] ('SELECT `t1`.`id`, `t1`.`name` FROM `testnamemodel` AS t1 WHERE (`t1`.`id` = %s)', ([2],), {})
-[I 180425 15:14:37 web:2106] 200 GET /alex?id=2 (127.0.0.1) 4.99ms
-[I 180425 15:18:47 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/test_name.py modified; restarting server
-[D 180425 16:17:06 selector_events:65] Using selector: KqueueSelector
-[D 180425 16:43:09 selector_events:65] Using selector: KqueueSelector
-[E 180425 16:43:09 torndb:106] Cannot connect to MySQL on 127.0.0.1
-    Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/torndb.py", line 103, in __init__
-        self.reconnect()
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/torndb.py", line 121, in reconnect
-        self._db = pymysql.connect(**self._db_args)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/pymysql/__init__.py", line 90, in Connect
-        return Connection(*args, **kwargs)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/pymysql/connections.py", line 699, in __init__
-        self.connect()
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/pymysql/connections.py", line 936, in connect
-        self._request_authentication()
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/pymysql/connections.py", line 1156, in _request_authentication
-        auth_packet = self._read_packet()
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/pymysql/connections.py", line 1018, in _read_packet
-        packet.check_error()
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/pymysql/connections.py", line 384, in check_error
-        err.raise_mysql_exception(self._data)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
-        raise errorclass(errno, errval)
-    pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
+        obj = await self.application.objects.get(TestNameModel, id=obj_id)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
+        result = yield from self.execute(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
+        query = self._swap_database(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
+        query.database, self.database
+    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10f379c88> Manager: <utils.databases.PooledMySQLDatabase object at 0x10f0b7438>
+[E 180425 19:00:45 web:2106] 500 GET /alex?id=2 (127.0.0.1) 4.81ms
+[I 180425 19:01:45 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/test_name_model.py modified; restarting server
+[D 180425 19:01:52 selector_events:65] Using selector: KqueueSelector
+[D 180425 19:01:54 peewee_async:1531] ('SELECT `t1`.`id`, `t1`.`name` FROM `testnamemodel` AS t1 WHERE (`t1`.`id` = %s)', ([2],), {})
+[I 180425 19:01:54 web:2106] 200 GET /alex?id=2 (127.0.0.1) 3.80ms
+[I 180425 19:03:06 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
+[D 180425 19:03:06 selector_events:65] Using selector: KqueueSelector

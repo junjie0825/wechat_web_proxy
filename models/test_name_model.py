@@ -1,13 +1,10 @@
 import peewee
-from utils.databases import *
+from models.base_model import BaseGameModel
 
 
 # Define model
-class TestNameModel(peewee.Model):
+class TestNameModel(BaseGameModel):
     name = peewee.CharField()
-
-    class Meta:
-        database = database
 
     def __str__(self):
         return self.name

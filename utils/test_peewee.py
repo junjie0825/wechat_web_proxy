@@ -18,7 +18,6 @@ print(id(database))
 print(id(database2))
 
 
-
 # Define model
 class TestNameModel(peewee.Model):
     name = peewee.CharField()

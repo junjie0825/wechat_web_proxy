@@ -12,10 +12,10 @@ setting = {
 # mysql
 mysql_option = dict(
     host="127.0.0.1",
-    database="wechat_web",
+    database="test5",
     user="root",
-    password="f0afa525de"
-    # password="root"
+    # password="f0afa525de"
+    password="root"
 )
 
 redis_option = dict(
