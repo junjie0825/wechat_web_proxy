@@ -8,11 +8,15 @@ import os
 # from api.wechat import conf
 # from urllib.parse import quote
 from PIL import Image
+import single_redis
+
 
 from jsmin import jsmin
 # from models.base_model import redis_client
 # import qrcode
 import uuid
+
+redis_client = single_redis.redis_client
 
 
 # 返回 月日 时分秒 的时间字符串
@@ -65,7 +69,6 @@ def make_uid(self):
     if not uid:
         return 0
     return int(uid)
-
 
 
 def create_qr_code(uid, croped_im):

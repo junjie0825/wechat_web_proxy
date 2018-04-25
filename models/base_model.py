@@ -1,7 +1,8 @@
 import peewee
-import redis
+import single_redis
 import config
-import utils.databases
+import utils.single_database
+import utils.single_redis
 
 
 
@@ -13,9 +14,10 @@ import utils.databases
 #                         port=logs_conf['port'], database=logs_conf['db'])
 # redis_client = redis.StrictRedis(host=conf['redis']['host'], port=conf['redis']['port'], db=conf['redis']['db'],
 #                                  password=conf['redis']['password'], socket_timeout=conf['redis']['socket_timeout'])
-database = utils.databases.database
+database = utils.single_database.database
 print("1--------------", id(database))
 print(database)
+redis_client = utils.single_redis.redis_client
 
 
 class BaseGameModel(peewee.Model):

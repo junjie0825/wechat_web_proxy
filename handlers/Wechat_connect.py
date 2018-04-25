@@ -4,7 +4,7 @@ import xmltodict
 import hashlib
 import time
 import json
-
+# from models.players import Players
 from tornado.httpclient import AsyncHTTPClient, HTTPRequest
 from constants import *
 

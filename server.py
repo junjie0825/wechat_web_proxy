@@ -3,9 +3,9 @@ import tornado.ioloop
 import tornado.options
 import tornado.httpserver
 import config
-import redis
+import single_redis
 # import torndb
-import utils.databases
+import utils.single_database
 import peewee_async
 
 # from utils.databases import *
@@ -24,7 +24,7 @@ class Application(tornado.web.Application):
 
 
 def main():
-    database = utils.databases.database
+    database = utils.single_database.database
     print('2--------------', id(database))
     print(database)
     options.logging = config.log_level
