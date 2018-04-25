@@ -10,7 +10,7 @@ import os
 from PIL import Image
 
 from jsmin import jsmin
-from models.base_model import redis_client
+# from models.base_model import redis_client
 # import qrcode
 import uuid
 

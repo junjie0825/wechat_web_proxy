@@ -1,11 +1,22 @@
 import peewee
 import peewee_async
 import tornado.web
+
+from utils.databases import PooledMySQLDatabase
 from tornado import httpserver
 
-database = peewee_async.PooledMySQLDatabase(
+
+database = PooledMySQLDatabase(
     'test5', host='127.0.0.1', port=3306,
     user='root', password='root')
+
+database2 = PooledMySQLDatabase(
+    'test5', host='127.0.0.1', port=3306,
+    user='root', password='root')
+
+print(id(database))
+print(id(database2))
+
 
 
 # Define model
