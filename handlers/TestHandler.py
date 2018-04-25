@@ -12,6 +12,8 @@ class RootHandler(BaseHandler):
         obj_id = self.get_argument('id', None)
         try:
             obj = await self.application.objects.get(TestNameModel, id=obj_id)
+            print(type(obj))
+            print(obj)
             self.write({
                 'id': obj.id,
                 'name': obj.name,
