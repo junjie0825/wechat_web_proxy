@@ -1,8 +1,8 @@
 import peewee
 import peewee_async
 import tornado.web
+from databases import PooledMySQLDatabase
 
-from utils.databases import PooledMySQLDatabase
 from tornado import httpserver
 
 
