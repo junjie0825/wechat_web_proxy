@@ -83,10 +83,10 @@ class WechatHandler(BaseHandler):
         if msg_type == "text":
             content_tmp = dict_data["xml"]["Content"]
             print("*********************")
-            if bytes(content_tmp, encoding="utf-8") == (bytes("李红艳", encoding="utf-8")):
+            if bytes(content_tmp, encoding="utf-8") == (bytes("Alex", encoding="utf-8")):
                 content = "聪明聪明"
             else:
-                content = "%s是笨蛋超级大笨蛋" % content_tmp
+                content = "%s是什么意思" % content_tmp
         elif msg_type == "event":
             content = "您总算是来了呀"
             if dict_data["xml"]["Event"] == "subscribe":
@@ -151,13 +151,13 @@ class ProfileHandler(BaseHandler):
     def get(self, *args, **kwargs):
         access_token = yield AccessToken.get_access_token()
         code = self.get_argument("code")
-        print("code************", code)
+        # print("code************", code)
         client = AsyncHTTPClient()
         url = "https://api.weixin.qq.com/sns/oauth2/access_token?" \
               "appid=%s&secret=%s&code=%s&grant_type=authorization_code" % (WECHAT_APPID, WECHAT_APPSECRET, code)
         resp = yield client.fetch(url)
         dict_data = json.loads(resp.body)
-        print("access!!!!!!!!!!!!!!!!!", resp.body)
+        # print("access!!!!!!!!!!!!!!!!!", resp.body)
         if "errcode" in dict_data:
             self.write("error occur")
         else:
