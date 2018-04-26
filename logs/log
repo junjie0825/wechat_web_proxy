@@ -605,3 +605,14 @@
 [I 180426 10:57:39 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
 [D 180426 10:58:09 selector_events:65] Using selector: KqueueSelector
 [I 180426 10:58:13 web:2106] 200 GET /test (127.0.0.1) 61.47ms
+[I 180426 11:01:36 web:2106] 304 GET /test (127.0.0.1) 3.94ms
+[I 180426 11:01:37 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
+[D 180426 11:01:37 selector_events:65] Using selector: KqueueSelector
+[I 180426 11:02:59 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/config.py modified; restarting server
+[D 180426 11:03:00 selector_events:65] Using selector: KqueueSelector
+[I 180426 11:03:03 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/config.py modified; restarting server
+[D 180426 11:03:03 selector_events:65] Using selector: KqueueSelector
+[D 180426 11:06:10 selector_events:65] Using selector: KqueueSelector
+[D 180426 11:08:07 selector_events:65] Using selector: KqueueSelector
+[D 180426 11:09:24 selector_events:65] Using selector: KqueueSelector
+[D 180426 11:09:34 selector_events:65] Using selector: KqueueSelector

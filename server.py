@@ -19,8 +19,6 @@ class Application(tornado.web.Application):
         # self.db =
         # self.redis = redis.StrictRedis(**config.redis_option)
         database = utils.database.engine
-        print('2--------------', id(database))
-        print(database)
         self.db = scoped_session(sessionmaker(bind=database,
                                               autocommit=False, autoflush=True,
                                               expire_on_commit=False))

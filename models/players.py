@@ -56,5 +56,5 @@ class Players(Base):
     # wechat_openid = Column(VARCHAR(32), default=1, comment="微信公众号 OPENID")
     # agent_permission = Column(Integer(), default=1, comment="是否有开通代理的权限")
 
-    def __str__(self):
-        return self.unionid
+    # def __str__(self):
+    #     return self.unionid

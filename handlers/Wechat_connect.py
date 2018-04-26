@@ -4,9 +4,10 @@ import xmltodict
 import hashlib
 import time
 import json
-# from models.players import Players
+from models.players import Players
 from tornado.httpclient import AsyncHTTPClient, HTTPRequest
 from constants import *
+import sqlalchemy.orm.exc
 
 from handlers.BaseHandler import BaseHandler
 from models.players import Players
@@ -158,19 +159,19 @@ class QrcodeHandler(BaseHandler):
 class ProfileHandler(BaseHandler):
     def __create_user(self, ):
         pass
-
-    async def unionid_is_exist(self, tmp_unionid):
-        print("begin")
-        try:
-            res_by_unionid = await self.application.objects.get(Players, unionid=tmp_unionid)
-            print("OKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOK")
-            print(res_by_unionid)
-            print(type(res_by_unionid))
-            print(next(res_by_unionid))
-            print(next(res_by_unionid))
-            self.write(res_by_unionid)
-        except Players.DoesNotExist:
-            self.write("sorry don't exist")
+    #
+    # async def unionid_is_exist(self, tmp_unionid):
+    #     print("begin")
+    #     try:
+    #         res_by_unionid = await self.application.objects.get(Players, unionid=tmp_unionid)
+    #         print("OKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOK")
+    #         print(res_by_unionid)
+    #         print(type(res_by_unionid))
+    #         print(next(res_by_unionid))
+    #         print(next(res_by_unionid))
+    #         self.write(res_by_unionid)
+    #     except Players.DoesNotExist:
+    #         self.write("sorry don't exist")
 
     # async def get(self):
     #     obj_id = self.get_argument('id', None)
@@ -184,10 +185,12 @@ class ProfileHandler(BaseHandler):
     #         raise tornado.web.HTTPError(404, "Object not found!")
 
 
+
     @tornado.gen.coroutine
     def get(self, *args, **kwargs):
         access_token = yield AccessToken.get_access_token()
         code = self.get_argument("code")
+        print("code************", code)
         client = AsyncHTTPClient()
         url = "https://api.weixin.qq.com/sns/oauth2/access_token?" \
               "appid=%s&secret=%s&code=%s&grant_type=authorization_code" % (WECHAT_APPID, WECHAT_APPSECRET, code)
@@ -201,19 +204,33 @@ class ProfileHandler(BaseHandler):
             open_id = dict_data["openid"]
             url = "https://api.weixin.qq.com/cgi-bin/user/info" \
                   "?access_token=%s&openid=%s&lang=zh_CN" % (access_token, open_id)
-            # print("11111111111111111111111111")
             resp = yield client.fetch(url)
             # try:
             #     print(resp.body)
             # except Exception as e:
             #     pass
             user_data = json.loads(resp.body)
+            unionid = user_data["unionid"]
+            print("213------unionid==", unionid)
             if "errcode" in user_data:
                 self.write("error occur at get info from wechat")
             else:
-                unionid = user_data["unionid"]
                 print("MMMMMMMMMMMMMMMMMMMMMMMMMMM")
-                self.unionid_is_exist(unionid)
+                try:
+                    query_result = self.db.query(Players).filter(Players.unionid == unionid).one()
+                    self.write(query_result.nick_name)
+                except sqlalchemy.orm.exc.NoResultFound:
+                    self.write("no")
+
+                # print("endendendendendendendendendendendendendendendendendendendendendendendendendendendendendendendendendendend")
+                # # self.finish()
+                # if query_result:
+                #     self.write(query_result.nick_name)
+                #     self.finish()
+                # else:
+                #     self.write("don't exist")
+                #     self.finish()
+
                 # player_by_unionid = self.unionid_is_exist(unionid)
                 # if player_by_unionid:
                 #     self.write(player_by_unionid)
