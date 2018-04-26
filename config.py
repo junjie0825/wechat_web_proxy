@@ -13,6 +13,7 @@ setting = {
 mysql_option = dict(
     host="127.0.0.1",
     database="test5",
+    # database="wechat_web",
     user="root",
     # password="f0afa525de"
     password="root"

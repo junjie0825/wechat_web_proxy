@@ -1,107 +1,607 @@
-[D 180425 18:56:09 selector_events:65] Using selector: KqueueSelector
-[E 180425 18:56:14 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
+[D 180426 10:02:35 selector_events:65] Using selector: KqueueSelector
+[E 180426 10:02:54 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
     HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
-        obj = await self.application.objects.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
-        result = yield from self.execute(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
-        query = self._swap_database(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
-        query.database, self.database
-    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10f462c88> Manager: <utils.databases.PooledMySQLDatabase object at 0x10f1a1438>
-[E 180425 18:56:14 web:2106] 500 GET /alex?id=2 (127.0.0.1) 5.11ms
-[D 180425 18:58:43 selector_events:65] Using selector: KqueueSelector
-[E 180425 18:58:57 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 10, in get
+        print(item.content)
+    AttributeError: 'Students' object has no attribute 'content'
+[E 180426 10:02:54 web:2106] 500 GET /alex?id=2 (127.0.0.1) 96.74ms
+[E 180426 10:02:57 web:1621] Uncaught exception GET /alex (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
-        obj = await self.application.objects.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
-        result = yield from self.execute(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
-        query = self._swap_database(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
-        query.database, self.database
-    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10317bc88> Manager: <utils.databases.PooledMySQLDatabase object at 0x102eba438>
-[E 180425 18:58:57 web:2106] 500 GET /alex?id=2 (127.0.0.1) 5.80ms
-[E 180425 18:58:58 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 10, in get
+        print(item.content)
+    AttributeError: 'Students' object has no attribute 'content'
+[E 180426 10:02:57 web:2106] 500 GET /alex (127.0.0.1) 1.82ms
+[E 180426 10:03:00 web:1621] Uncaught exception GET /alex (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
-        obj = await self.application.objects.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
-        result = yield from self.execute(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
-        query = self._swap_database(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
-        query.database, self.database
-    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10317bc88> Manager: <utils.databases.PooledMySQLDatabase object at 0x102eba438>
-[E 180425 18:58:58 web:2106] 500 GET /alex?id=2 (127.0.0.1) 1.05ms
-[E 180425 18:58:59 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 10, in get
+        print(item.content)
+    AttributeError: 'Students' object has no attribute 'content'
+[E 180426 10:03:00 web:2106] 500 GET /alex (127.0.0.1) 1.92ms
+[E 180426 10:03:01 web:1621] Uncaught exception GET /alex (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
-        obj = await self.application.objects.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
-        result = yield from self.execute(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
-        query = self._swap_database(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
-        query.database, self.database
-    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10317bc88> Manager: <utils.databases.PooledMySQLDatabase object at 0x102eba438>
-[E 180425 18:58:59 web:2106] 500 GET /alex?id=2 (127.0.0.1) 1.20ms
-[I 180425 18:59:53 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 18:59:53 selector_events:65] Using selector: KqueueSelector
-[I 180425 19:00:34 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/base_model.py modified; restarting server
-[D 180425 19:00:34 selector_events:65] Using selector: KqueueSelector
-[E 180425 19:00:45 web:1621] Uncaught exception GET /alex?id=2 (127.0.0.1)
-    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex?id=2', version='HTTP/1.1', remote_ip='127.0.0.1')
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 10, in get
+        print(item.content)
+    AttributeError: 'Students' object has no attribute 'content'
+[E 180426 10:03:01 web:2106] 500 GET /alex (127.0.0.1) 1.84ms
+[E 180426 10:03:15 web:1621] Uncaught exception GET /alex (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex', version='HTTP/1.1', remote_ip='127.0.0.1')
     Traceback (most recent call last):
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
-        result = yield result
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
-        value = future.result()
-      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 14, in get
-        obj = await self.application.objects.get(TestNameModel, id=obj_id)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 169, in get
-        result = yield from self.execute(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 268, in execute
-        query = self._swap_database(query)
-      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/peewee_async.py", line 383, in _swap_database
-        query.database, self.database
-    AssertionError: Error, query's database and manager's database are different. Query: <peewee.SqliteDatabase object at 0x10f379c88> Manager: <utils.databases.PooledMySQLDatabase object at 0x10f0b7438>
-[E 180425 19:00:45 web:2106] 500 GET /alex?id=2 (127.0.0.1) 4.81ms
-[I 180425 19:01:45 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/test_name_model.py modified; restarting server
-[D 180425 19:01:52 selector_events:65] Using selector: KqueueSelector
-[D 180425 19:01:54 peewee_async:1531] ('SELECT `t1`.`id`, `t1`.`name` FROM `testnamemodel` AS t1 WHERE (`t1`.`id` = %s)', ([2],), {})
-[I 180425 19:01:54 web:2106] 200 GET /alex?id=2 (127.0.0.1) 3.80ms
-[I 180425 19:03:06 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 19:03:06 selector_events:65] Using selector: KqueueSelector
-[I 180425 19:05:14 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 19:05:15 selector_events:65] Using selector: KqueueSelector
-[I 180425 19:07:04 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
-[D 180425 19:07:04 selector_events:65] Using selector: KqueueSelector
-[I 180425 19:08:40 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/utils/single_redis.py modified; restarting server
-[D 180425 19:14:34 selector_events:65] Using selector: KqueueSelector
-[D 180425 19:14:43 peewee_async:1531] ('SELECT `t1`.`id`, `t1`.`name` FROM `testnamemodel` AS t1 WHERE (`t1`.`id` = %s)', ([1],), {})
-[I 180425 19:14:43 web:2106] 304 GET /alex?id=1 (127.0.0.1) 4.46ms
-[I 180425 19:16:48 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Wechat_connect.py modified; restarting server
-[D 180425 19:16:58 selector_events:65] Using selector: KqueueSelector
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 10, in get
+        print(item.content)
+    AttributeError: 'Students' object has no attribute 'content'
+[E 180426 10:03:15 web:2106] 500 GET /alex (127.0.0.1) 2.33ms
+[E 180426 10:03:16 web:1621] Uncaught exception GET /alex (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 10, in get
+        print(item.content)
+    AttributeError: 'Students' object has no attribute 'content'
+[E 180426 10:03:16 web:2106] 500 GET /alex (127.0.0.1) 2.05ms
+[E 180426 10:03:20 web:1621] Uncaught exception GET /alex (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/alex', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py", line 10, in get
+        print(item.content)
+    AttributeError: 'Students' object has no attribute 'content'
+[E 180426 10:03:20 web:2106] 500 GET /alex (127.0.0.1) 1.97ms
+[D 180426 10:03:25 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:03:59 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py modified; restarting server
+[D 180426 10:03:59 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:04:02 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/TestHandler.py modified; restarting server
+[D 180426 10:04:02 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:04:03 web:2106] 200 GET /alex (127.0.0.1) 52.64ms
+[I 180426 10:22:05 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py modified; restarting server
+[D 180426 10:22:06 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:28:43 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/utils/singleton.py modified; restarting server
+[D 180426 10:28:43 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:29:08 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/server.py modified; restarting server
+[D 180426 10:29:08 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:29:21 web:2106] 304 GET /alex (127.0.0.1) 45.42ms
+[I 180426 10:30:09 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Wechat_connect.py modified; restarting server
+[D 180426 10:48:03 selector_events:65] Using selector: KqueueSelector
+[E 180426 10:48:11 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    _mysql_exceptions.OperationalError: (1054, "Unknown column 'players.bank' in 'field list'")
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 11, in get
+        data = self.db.query(Players).all()
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2773, in all
+        return list(self)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2925, in __iter__
+        return self._execute_and_instances(context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2948, in _execute_and_instances
+        result = conn.execute(querycontext.statement, self._params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+        return meth(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+        return connection._execute_clauseelement(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+        compiled_sql, distilled_params
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+        exc_info
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+        reraise(type(exception), exception, tb=exc_tb, cause=cause)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+        raise value.with_traceback(tb)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1054, "Unknown column 'players.bank' in 'field list'") [SQL: 'SELECT players.uid AS players_uid, players.nick_name AS players_nick_name, players.avatar AS players_avatar, players.sex AS players_sex, players.imei AS players_imei, players.imsi AS players_imsi, players.bank AS players_bank, players.mac AS players_mac, players.model AS players_model, players.reg_time AS players_reg_time, players.channel_id AS players_channel_id, players.platform AS players_platform, players.ver AS players_ver, players.diamond AS players_diamond, players.token AS players_token, players.refresh_token AS players_refresh_token, players.expires_at AS players_expires_at, players.auto_token AS players_auto_token, players.openid AS players_openid, players.unionid AS players_unionid, players.agent AS players_agent, players.phone AS players_phone, players.pwd AS players_pwd, players.verify_code AS players_verify_code, players.verify_expire_at AS players_verify_expire_at, players.login_time AS players_login_time, players.ip AS players_ip, players.money AS players_money, players.agent_parent_1_id AS players_agent_parent_1_id, players.agent_parent_2_id AS players_agent_parent_2_id, players.promote_parent_1_id AS players_promote_parent_1_id, players.promote_parent_2_id AS players_promote_parent_2_id, players.wechat_temp_time AS players_wechat_temp_time, players.wechat_temp_id AS players_wechat_temp_id, players.wechat_openid AS players_wechat_openid, players.agent_permission AS players_agent_permission \nFROM players'] (Background on this error at: http://sqlalche.me/e/e3q8)
+[E 180426 10:48:11 web:2106] 500 GET /test (127.0.0.1) 65.67ms
+[I 180426 10:49:04 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:49:05 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:49:10 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:49:16 selector_events:65] Using selector: KqueueSelector
+[E 180426 10:49:23 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 13, in get
+        print(item.name)
+    AttributeError: 'Players' object has no attribute 'name'
+[E 180426 10:49:23 web:2106] 500 GET /test (127.0.0.1) 49.19ms
+[I 180426 10:49:41 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py modified; restarting server
+[D 180426 10:49:41 selector_events:65] Using selector: KqueueSelector
+[E 180426 10:49:44 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 13, in get
+        print(item.id)
+    AttributeError: 'Players' object has no attribute 'id'
+[E 180426 10:49:44 web:2106] 500 GET /test (127.0.0.1) 53.40ms
+[E 180426 10:49:46 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 13, in get
+        print(item.id)
+    AttributeError: 'Players' object has no attribute 'id'
+[E 180426 10:49:46 web:2106] 500 GET /test (127.0.0.1) 1.71ms
+[E 180426 10:49:47 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 13, in get
+        print(item.id)
+    AttributeError: 'Players' object has no attribute 'id'
+[E 180426 10:49:47 web:2106] 500 GET /test (127.0.0.1) 2.03ms
+[I 180426 10:50:00 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py modified; restarting server
+[D 180426 10:50:00 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:50:02 web:2106] 200 GET /test (127.0.0.1) 50.82ms
+[I 180426 10:51:07 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:51:07 selector_events:65] Using selector: KqueueSelector
+[E 180426 10:51:10 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    _mysql_exceptions.OperationalError: (1054, "Unknown column 'players.bank' in 'field list'")
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 11, in get
+        data = self.db.query(Players).all()
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2773, in all
+        return list(self)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2925, in __iter__
+        return self._execute_and_instances(context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2948, in _execute_and_instances
+        result = conn.execute(querycontext.statement, self._params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+        return meth(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+        return connection._execute_clauseelement(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+        compiled_sql, distilled_params
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+        exc_info
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+        reraise(type(exception), exception, tb=exc_tb, cause=cause)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+        raise value.with_traceback(tb)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1054, "Unknown column 'players.bank' in 'field list'") [SQL: 'SELECT players.uid AS players_uid, players.nick_name AS players_nick_name, players.avatar AS players_avatar, players.sex AS players_sex, players.imei AS players_imei, players.imsi AS players_imsi, players.bank AS players_bank, players.mac AS players_mac, players.model AS players_model, players.reg_time AS players_reg_time, players.channel_id AS players_channel_id, players.platform AS players_platform, players.ver AS players_ver, players.diamond AS players_diamond, players.token AS players_token, players.refresh_token AS players_refresh_token, players.expires_at AS players_expires_at \nFROM players'] (Background on this error at: http://sqlalche.me/e/e3q8)
+[E 180426 10:51:10 web:2106] 500 GET /test (127.0.0.1) 70.09ms
+[E 180426 10:51:12 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    _mysql_exceptions.OperationalError: (1054, "Unknown column 'players.bank' in 'field list'")
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 11, in get
+        data = self.db.query(Players).all()
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2773, in all
+        return list(self)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2925, in __iter__
+        return self._execute_and_instances(context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2948, in _execute_and_instances
+        result = conn.execute(querycontext.statement, self._params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+        return meth(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+        return connection._execute_clauseelement(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+        compiled_sql, distilled_params
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+        exc_info
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+        reraise(type(exception), exception, tb=exc_tb, cause=cause)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+        raise value.with_traceback(tb)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1054, "Unknown column 'players.bank' in 'field list'") [SQL: 'SELECT players.uid AS players_uid, players.nick_name AS players_nick_name, players.avatar AS players_avatar, players.sex AS players_sex, players.imei AS players_imei, players.imsi AS players_imsi, players.bank AS players_bank, players.mac AS players_mac, players.model AS players_model, players.reg_time AS players_reg_time, players.channel_id AS players_channel_id, players.platform AS players_platform, players.ver AS players_ver, players.diamond AS players_diamond, players.token AS players_token, players.refresh_token AS players_refresh_token, players.expires_at AS players_expires_at \nFROM players'] (Background on this error at: http://sqlalche.me/e/e3q8)
+[E 180426 10:51:12 web:2106] 500 GET /test (127.0.0.1) 2.48ms
+[E 180426 10:51:13 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    _mysql_exceptions.OperationalError: (1054, "Unknown column 'players.bank' in 'field list'")
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 11, in get
+        data = self.db.query(Players).all()
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2773, in all
+        return list(self)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2925, in __iter__
+        return self._execute_and_instances(context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2948, in _execute_and_instances
+        result = conn.execute(querycontext.statement, self._params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+        return meth(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+        return connection._execute_clauseelement(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+        compiled_sql, distilled_params
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+        exc_info
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+        reraise(type(exception), exception, tb=exc_tb, cause=cause)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+        raise value.with_traceback(tb)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1054, "Unknown column 'players.bank' in 'field list'") [SQL: 'SELECT players.uid AS players_uid, players.nick_name AS players_nick_name, players.avatar AS players_avatar, players.sex AS players_sex, players.imei AS players_imei, players.imsi AS players_imsi, players.bank AS players_bank, players.mac AS players_mac, players.model AS players_model, players.reg_time AS players_reg_time, players.channel_id AS players_channel_id, players.platform AS players_platform, players.ver AS players_ver, players.diamond AS players_diamond, players.token AS players_token, players.refresh_token AS players_refresh_token, players.expires_at AS players_expires_at \nFROM players'] (Background on this error at: http://sqlalche.me/e/e3q8)
+[E 180426 10:51:13 web:2106] 500 GET /test (127.0.0.1) 3.02ms
+[I 180426 10:51:44 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:51:44 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:51:50 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:51:51 selector_events:65] Using selector: KqueueSelector
+[E 180426 10:51:54 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    _mysql_exceptions.OperationalError: (1054, "Unknown column 'players.money' in 'field list'")
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 11, in get
+        data = self.db.query(Players).all()
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2773, in all
+        return list(self)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2925, in __iter__
+        return self._execute_and_instances(context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2948, in _execute_and_instances
+        result = conn.execute(querycontext.statement, self._params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+        return meth(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+        return connection._execute_clauseelement(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+        compiled_sql, distilled_params
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+        exc_info
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+        reraise(type(exception), exception, tb=exc_tb, cause=cause)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+        raise value.with_traceback(tb)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1054, "Unknown column 'players.money' in 'field list'") [SQL: 'SELECT players.uid AS players_uid, players.nick_name AS players_nick_name, players.avatar AS players_avatar, players.sex AS players_sex, players.imei AS players_imei, players.imsi AS players_imsi, players.mac AS players_mac, players.model AS players_model, players.reg_time AS players_reg_time, players.channel_id AS players_channel_id, players.platform AS players_platform, players.ver AS players_ver, players.diamond AS players_diamond, players.token AS players_token, players.refresh_token AS players_refresh_token, players.expires_at AS players_expires_at, players.auto_token AS players_auto_token, players.openid AS players_openid, players.unionid AS players_unionid, players.agent AS players_agent, players.phone AS players_phone, players.pwd AS players_pwd, players.verify_code AS players_verify_code, players.verify_expire_at AS players_verify_expire_at, players.login_time AS players_login_time, players.ip AS players_ip, players.money AS players_money, players.agent_parent_1_id AS players_agent_parent_1_id, players.agent_parent_2_id AS players_agent_parent_2_id, players.promote_parent_1_id AS players_promote_parent_1_id, players.promote_parent_2_id AS players_promote_parent_2_id, players.wechat_temp_time AS players_wechat_temp_time, players.wechat_temp_id AS players_wechat_temp_id, players.wechat_openid AS players_wechat_openid, players.agent_permission AS players_agent_permission \nFROM players'] (Background on this error at: http://sqlalche.me/e/e3q8)
+[E 180426 10:51:54 web:2106] 500 GET /test (127.0.0.1) 66.71ms
+[I 180426 10:52:16 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:52:16 selector_events:65] Using selector: KqueueSelector
+[E 180426 10:52:18 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    _mysql_exceptions.OperationalError: (1054, "Unknown column 'players.agent_parent_1_id' in 'field list'")
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 11, in get
+        data = self.db.query(Players).all()
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2773, in all
+        return list(self)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2925, in __iter__
+        return self._execute_and_instances(context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2948, in _execute_and_instances
+        result = conn.execute(querycontext.statement, self._params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+        return meth(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+        return connection._execute_clauseelement(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+        compiled_sql, distilled_params
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+        exc_info
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+        reraise(type(exception), exception, tb=exc_tb, cause=cause)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+        raise value.with_traceback(tb)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1054, "Unknown column 'players.agent_parent_1_id' in 'field list'") [SQL: 'SELECT players.uid AS players_uid, players.nick_name AS players_nick_name, players.avatar AS players_avatar, players.sex AS players_sex, players.imei AS players_imei, players.imsi AS players_imsi, players.mac AS players_mac, players.model AS players_model, players.reg_time AS players_reg_time, players.channel_id AS players_channel_id, players.platform AS players_platform, players.ver AS players_ver, players.diamond AS players_diamond, players.token AS players_token, players.refresh_token AS players_refresh_token, players.expires_at AS players_expires_at, players.auto_token AS players_auto_token, players.openid AS players_openid, players.unionid AS players_unionid, players.agent AS players_agent, players.phone AS players_phone, players.pwd AS players_pwd, players.verify_code AS players_verify_code, players.verify_expire_at AS players_verify_expire_at, players.login_time AS players_login_time, players.ip AS players_ip, players.agent_parent_1_id AS players_agent_parent_1_id, players.agent_parent_2_id AS players_agent_parent_2_id, players.promote_parent_1_id AS players_promote_parent_1_id, players.promote_parent_2_id AS players_promote_parent_2_id, players.wechat_temp_time AS players_wechat_temp_time, players.wechat_temp_id AS players_wechat_temp_id, players.wechat_openid AS players_wechat_openid, players.agent_permission AS players_agent_permission \nFROM players'] (Background on this error at: http://sqlalche.me/e/e3q8)
+[E 180426 10:52:18 web:2106] 500 GET /test (127.0.0.1) 75.03ms
+[I 180426 10:52:40 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:52:40 selector_events:65] Using selector: KqueueSelector
+[E 180426 10:52:43 web:1621] Uncaught exception GET /test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/test', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    _mysql_exceptions.OperationalError: (1054, "Unknown column 'players.wechat_temp_time' in 'field list'")
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/hejunjie/PycharmProjects/wechat_web_proxy/handlers/Player.py", line 11, in get
+        data = self.db.query(Players).all()
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2773, in all
+        return list(self)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2925, in __iter__
+        return self._execute_and_instances(context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2948, in _execute_and_instances
+        result = conn.execute(querycontext.statement, self._params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+        return meth(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+        return connection._execute_clauseelement(self, multiparams, params)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+        compiled_sql, distilled_params
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+        exc_info
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+        reraise(type(exception), exception, tb=exc_tb, cause=cause)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+        raise value.with_traceback(tb)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+        context)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+        cursor.execute(statement, parameters)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+        self.errorhandler(self, exc, value)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+        raise errorvalue
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+        res = self._query(query)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+        rowcount = self._do_query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+        db.query(q)
+      File "/Users/hejunjie/PycharmProjects/MyProject/torenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 277, in query
+        _mysql.connection.query(self, query)
+    sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1054, "Unknown column 'players.wechat_temp_time' in 'field list'") [SQL: 'SELECT players.uid AS players_uid, players.nick_name AS players_nick_name, players.avatar AS players_avatar, players.sex AS players_sex, players.imei AS players_imei, players.imsi AS players_imsi, players.mac AS players_mac, players.model AS players_model, players.reg_time AS players_reg_time, players.channel_id AS players_channel_id, players.platform AS players_platform, players.ver AS players_ver, players.diamond AS players_diamond, players.token AS players_token, players.refresh_token AS players_refresh_token, players.expires_at AS players_expires_at, players.auto_token AS players_auto_token, players.openid AS players_openid, players.unionid AS players_unionid, players.agent AS players_agent, players.phone AS players_phone, players.pwd AS players_pwd, players.verify_code AS players_verify_code, players.verify_expire_at AS players_verify_expire_at, players.login_time AS players_login_time, players.ip AS players_ip, players.wechat_temp_time AS players_wechat_temp_time, players.wechat_temp_id AS players_wechat_temp_id, players.wechat_openid AS players_wechat_openid, players.agent_permission AS players_agent_permission \nFROM players'] (Background on this error at: http://sqlalche.me/e/e3q8)
+[E 180426 10:52:43 web:2106] 500 GET /test (127.0.0.1) 60.17ms
+[I 180426 10:53:04 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:53:04 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:56:18 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:56:18 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:57:19 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:57:19 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:57:34 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:57:34 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:57:39 autoreload:196] /Users/hejunjie/PycharmProjects/wechat_web_proxy/models/players.py modified; restarting server
+[D 180426 10:58:09 selector_events:65] Using selector: KqueueSelector
+[I 180426 10:58:13 web:2106] 200 GET /test (127.0.0.1) 61.47ms

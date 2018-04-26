@@ -9,6 +9,7 @@ from tornado.httpclient import AsyncHTTPClient, HTTPRequest
 from constants import *
 
 from handlers.BaseHandler import BaseHandler
+from models.players import Players
 
 
 class AccessToken(object):
@@ -158,13 +159,30 @@ class ProfileHandler(BaseHandler):
     def __create_user(self, ):
         pass
 
-    def unionid_is_exist(self, tmp_unionid):
-        sql = 'SELECT * FROM players WHERE unionid = %s'
-        res_by_unionid = self.db.get(sql, tmp_unionid)
-        if res_by_unionid:
-            return res_by_unionid
-        else:
-            return False
+    async def unionid_is_exist(self, tmp_unionid):
+        print("begin")
+        try:
+            res_by_unionid = await self.application.objects.get(Players, unionid=tmp_unionid)
+            print("OKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOK")
+            print(res_by_unionid)
+            print(type(res_by_unionid))
+            print(next(res_by_unionid))
+            print(next(res_by_unionid))
+            self.write(res_by_unionid)
+        except Players.DoesNotExist:
+            self.write("sorry don't exist")
+
+    # async def get(self):
+    #     obj_id = self.get_argument('id', None)
+    #     try:
+    #         obj = await self.application.objects.get(TestNameModel, id=obj_id)
+    #         self.write({
+    #             'id': obj.id,
+    #             'name': obj.name,
+    #         })
+    #     except TestNameModel.DoesNotExist:
+    #         raise tornado.web.HTTPError(404, "Object not found!")
+
 
     @tornado.gen.coroutine
     def get(self, *args, **kwargs):
@@ -183,7 +201,7 @@ class ProfileHandler(BaseHandler):
             open_id = dict_data["openid"]
             url = "https://api.weixin.qq.com/cgi-bin/user/info" \
                   "?access_token=%s&openid=%s&lang=zh_CN" % (access_token, open_id)
-            print("11111111111111111111111111")
+            # print("11111111111111111111111111")
             resp = yield client.fetch(url)
             # try:
             #     print(resp.body)
@@ -194,12 +212,14 @@ class ProfileHandler(BaseHandler):
                 self.write("error occur at get info from wechat")
             else:
                 unionid = user_data["unionid"]
-                player_by_unionid = self.unionid_is_exist(unionid)
-                if player_by_unionid:
-                    self.write(player_by_unionid)
-                else:
-                    # self.__create_user()
-                    self.write("don't exist")
+                print("MMMMMMMMMMMMMMMMMMMMMMMMMMM")
+                self.unionid_is_exist(unionid)
+                # player_by_unionid = self.unionid_is_exist(unionid)
+                # if player_by_unionid:
+                #     self.write(player_by_unionid)
+                # else:
+                #     # self.__create_user()
+                #     self.write("don't exist")
     """
     用户最终访问的URL网址
     https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf5a0ff0a7fe1c69b&redirect_uri=http%3A//wechat.hnbdfyy.com.cn/wechat8000/profile&response_type=code&scope=snsapi_userinfo&state=1#wechat _redirect

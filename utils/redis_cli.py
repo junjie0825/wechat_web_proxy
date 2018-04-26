@@ -1,6 +1,6 @@
 import redis
 import config
-from singleton import singleton
+from utils.singleton import singleton
 
 
 @singleton

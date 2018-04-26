@@ -3,12 +3,10 @@ import hashlib
 import datetime
 import json
 import random
-import server
-import os
 # from api.wechat import conf
 # from urllib.parse import quote
 from PIL import Image
-import single_redis
+import utils.redis_cli
 
 
 from jsmin import jsmin
@@ -16,7 +14,7 @@ from jsmin import jsmin
 # import qrcode
 import uuid
 
-redis_client = single_redis.redis_client
+redis_client = utils.redis_cli.redis_client
 
 
 # 返回 月日 时分秒 的时间字符串
