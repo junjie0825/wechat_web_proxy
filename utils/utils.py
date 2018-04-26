@@ -61,7 +61,7 @@ def uuid4():
 
 
 # 从 Redis 中返回一个新的 UID
-def make_uid(self):
+def make_uid():
     key = "all_uids"
     uid = redis_client.spop(key)
     if not uid:

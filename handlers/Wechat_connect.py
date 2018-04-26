@@ -4,7 +4,6 @@ import xmltodict
 import hashlib
 import time
 import json
-from models.players import Players
 from tornado.httpclient import AsyncHTTPClient, HTTPRequest
 from constants import *
 import sqlalchemy.orm.exc
@@ -85,23 +84,11 @@ class WechatHandler(BaseHandler):
             content_tmp = dict_data["xml"]["Content"]
             print("*********************")
             if bytes(content_tmp, encoding="utf-8") == (bytes("李红艳", encoding="utf-8")):
-                # print("OKOKOKOKOKOK")
                 content = "聪明聪明"
             else:
                 content = "%s是笨蛋超级大笨蛋" % content_tmp
-            # dict_data["xml"]["Content"]
-            # resp_data = """<xml>
-            #         <ToUserName><![CDATA[{0}]]></ToUserName>
-            #         <FromUserName><![CDATA[{1}]]></FromUserName>
-            #         <CreateTime>{2}</CreateTime>
-            #         <MsgType><![CDATA[text]]></MsgType>
-            #         <Content><![CDATA[{3}]]></Content>
-            #         </xml>
-            #       """.format(to_user, from_user, c_time, content)
-            #
         elif msg_type == "event":
             content = "您总算是来了呀"
-            # print(dict_data)
             if dict_data["xml"]["Event"] == "subscribe":
                 """用户关注事件"""
                 if not(dict_data["xml"]["EventKey"] is None):
@@ -159,32 +146,6 @@ class QrcodeHandler(BaseHandler):
 class ProfileHandler(BaseHandler):
     def __create_user(self, ):
         pass
-    #
-    # async def unionid_is_exist(self, tmp_unionid):
-    #     print("begin")
-    #     try:
-    #         res_by_unionid = await self.application.objects.get(Players, unionid=tmp_unionid)
-    #         print("OKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOK")
-    #         print(res_by_unionid)
-    #         print(type(res_by_unionid))
-    #         print(next(res_by_unionid))
-    #         print(next(res_by_unionid))
-    #         self.write(res_by_unionid)
-    #     except Players.DoesNotExist:
-    #         self.write("sorry don't exist")
-
-    # async def get(self):
-    #     obj_id = self.get_argument('id', None)
-    #     try:
-    #         obj = await self.application.objects.get(TestNameModel, id=obj_id)
-    #         self.write({
-    #             'id': obj.id,
-    #             'name': obj.name,
-    #         })
-    #     except TestNameModel.DoesNotExist:
-    #         raise tornado.web.HTTPError(404, "Object not found!")
-
-
 
     @tornado.gen.coroutine
     def get(self, *args, **kwargs):
@@ -200,43 +161,42 @@ class ProfileHandler(BaseHandler):
         if "errcode" in dict_data:
             self.write("error occur")
         else:
-            # access_token = dict_data["access_token"]
             open_id = dict_data["openid"]
             url = "https://api.weixin.qq.com/cgi-bin/user/info" \
                   "?access_token=%s&openid=%s&lang=zh_CN" % (access_token, open_id)
             resp = yield client.fetch(url)
-            # try:
-            #     print(resp.body)
-            # except Exception as e:
-            #     pass
             user_data = json.loads(resp.body)
-            unionid = user_data["unionid"]
-            print("213------unionid==", unionid)
-            if "errcode" in user_data:
-                self.write("error occur at get info from wechat")
+            # self.write(user_data)
+            subscribe = user_data["subscribe"]
+            if subscribe == 0:
+                self.write("Must Subscribe Official Accounts ")
             else:
-                print("MMMMMMMMMMMMMMMMMMMMMMMMMMM")
-                try:
-                    query_result = self.db.query(Players).filter(Players.unionid == unionid).one()
-                    self.write(query_result.nick_name)
-                except sqlalchemy.orm.exc.NoResultFound:
-                    self.write("no")
+                unionid = user_data['unionid']
+                nick_name = user_data['nickname']
+                sex = user_data['sex']
+                avatar = user_data['headimgurl']
+                print("213------unionid==", unionid)
+                if "errcode" in user_data:
+                    self.write("error occur at get info from wechat")
+                else:
+                    try:
+                        query_result = self.db.query(Players).filter(Players.unionid == unionid).one()
+                        self.write(query_result.nick_name)
+                    except sqlalchemy.orm.exc.NoResultFound:
+                        # self.write("no")
+                        # 用户之前没有登录过，自动绑定，插入一条记录
+                        print("begin")
+                        # print(nick_name, ' ', sex, ' ', avatar, ' ', unionid, ' ', open_id)
 
-                # print("endendendendendendendendendendendendendendendendendendendendendendendendendendendendendendendendendendend")
-                # # self.finish()
-                # if query_result:
-                #     self.write(query_result.nick_name)
-                #     self.finish()
-                # else:
-                #     self.write("don't exist")
-                #     self.finish()
+                        new_player = Players(nick_name=nick_name, unionid=unionid,  sex=sex, avatar=avatar,
+                                             openid=open_id)
+                        self.db.add(new_player)
+                        self.db.commit()
+                        print("done")
+                        self.write("ok")
 
-                # player_by_unionid = self.unionid_is_exist(unionid)
-                # if player_by_unionid:
-                #     self.write(player_by_unionid)
-                # else:
-                #     # self.__create_user()
-                #     self.write("don't exist")
+
+
     """
     用户最终访问的URL网址
     https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf5a0ff0a7fe1c69b&redirect_uri=http%3A//wechat.hnbdfyy.com.cn/wechat8000/profile&response_type=code&scope=snsapi_userinfo&state=1#wechat _redirect
