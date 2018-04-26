@@ -180,7 +180,8 @@ class ProfileHandler(BaseHandler):
                     self.write("error occur at get info from wechat")
                 else:
                     try:
-                        query_result = self.db.query(Players).filter(Players.unionid == unionid).one()
+                        query_result = self.game_db.query(Players).filter(Players.unionid == unionid).one()
+                        print(query_result)
                         self.write(query_result.nick_name)
                     except sqlalchemy.orm.exc.NoResultFound:
                         # self.write("no")
@@ -190,8 +191,8 @@ class ProfileHandler(BaseHandler):
 
                         new_player = Players(nick_name=nick_name, unionid=unionid,  sex=sex, avatar=avatar,
                                              openid=open_id)
-                        self.db.add(new_player)
-                        self.db.commit()
+                        self.game_db.add(new_player)
+                        self.game_db.commit()
                         print("done")
                         self.write("ok")
 

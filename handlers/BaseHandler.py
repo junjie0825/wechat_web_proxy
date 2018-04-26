@@ -19,8 +19,12 @@ class BaseHandler(RequestHandler):
         pass
 
     @property
-    def db(self):
-        return self.application.db
+    def game_db(self):
+        return self.application.game_db
+
+    @property
+    def logs_db(self):
+        return self.application.logs_db
 
     @property
     def redis(self):

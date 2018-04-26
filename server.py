@@ -18,10 +18,15 @@ class Application(tornado.web.Application):
         super(Application, self).__init__(*args, **kwargs)
         # self.db =
         # self.redis = redis.StrictRedis(**config.redis_option)
-        database = utils.database.engine
-        self.db = scoped_session(sessionmaker(bind=database,
-                                              autocommit=False, autoflush=True,
-                                              expire_on_commit=False))
+        game_database = utils.database.game_engine
+        logs_database = utils.database.logs_engine
+        self.game_db = scoped_session(sessionmaker(bind=game_database,
+                                                   autocommit=False, autoflush=True,
+                                                   expire_on_commit=False))
+
+        self.logs_db = scoped_session(sessionmaker(bind=logs_database,
+                                                   autocommit=False, autoflush=True,
+                                                   expire_on_commit=False))
 
 
 def main():
