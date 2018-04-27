@@ -181,20 +181,29 @@ class ProfileHandler(BaseHandler):
                 else:
                     try:
                         query_result = self.game_db.query(Players).filter(Players.unionid == unionid).one()
-                        print(query_result)
-                        self.write(query_result.nick_name)
+                        if query_result.agent != 0:
+                            # 普通用户不允许登陆逻辑
+                            self.write("You Are Not Authorized User")
+                        elif query_result.agent == 1:
+                            # 普通代理登陆逻辑
+                            self.write("Normal Agent User")
+                        elif query_result.agent == 2:
+                            # VIP代理登陆逻辑
+                            self.write("VIP Agent User")
                     except sqlalchemy.orm.exc.NoResultFound:
-                        # self.write("no")
                         # 用户之前没有登录过，自动绑定，插入一条记录
-                        print("begin")
+                        # print("begin")
                         # print(nick_name, ' ', sex, ' ', avatar, ' ', unionid, ' ', open_id)
 
-                        new_player = Players(nick_name=nick_name, unionid=unionid,  sex=sex, avatar=avatar,
-                                             openid=open_id)
-                        self.game_db.add(new_player)
-                        self.game_db.commit()
-                        print("done")
-                        self.write("ok")
+                        # new_player = Players(nick_name=nick_name, unionid=unionid,  sex=sex, avatar=avatar,
+                        #                      openid=open_id)
+                        # self.game_db.add(new_player)
+                        # self.game_db.commit()
+                        # print("done")
+                        # self.write("ok")
+                        # 用户没有注册过，不允许登陆，提示下载游戏完成注册
+                        self.write("Download the game and register please")
+
 
 
 

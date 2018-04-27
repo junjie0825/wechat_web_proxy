@@ -31,7 +31,7 @@ class Players(Base):
     auto_token = Column(VARCHAR(40), comment="自动登录 Token")
     openid = Column(VARCHAR(256), comment="开放平台 ID")
     unionid = Column(VARCHAR(100), comment="开放平台统一 ID")
-    agent = Column(SmallInteger(), comment="0=用户 1=代理")
+    agent = Column(SmallInteger(), comment="0=用户 1=普通代理 2=VIP代理")
     phone = Column(VARCHAR(20), comment="手机号码")
     pwd = Column(VARCHAR(32), comment="密码")
     verify_code = Column(VARCHAR(32), comment="验证码")
