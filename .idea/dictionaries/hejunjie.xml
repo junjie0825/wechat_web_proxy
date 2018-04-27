@@ -3,6 +3,7 @@
     <words>
       <w>appid</w>
       <w>echostr</w>
+      <w>tablename</w>
       <w>unionid</w>
       <w>wechat</w>
     </words>

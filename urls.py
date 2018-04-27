@@ -1,4 +1,4 @@
-from handlers import Passport, Wechat_connect
+from handlers import Passport, Wechat_connect, TestHandler, Player
 
 
 handlers = [
@@ -6,4 +6,6 @@ handlers = [
     (r'/wechat8000', Wechat_connect.WechatHandler),
     (r'/qrcode', Wechat_connect.QrcodeHandler),
     (r'/wechat8000/profile', Wechat_connect.ProfileHandler),
+    (r'/alex', TestHandler.DbHandler),
+    (r'/test', Player.UnionidHandler)
     ]

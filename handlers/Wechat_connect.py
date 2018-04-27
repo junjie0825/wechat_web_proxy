@@ -4,11 +4,12 @@ import xmltodict
 import hashlib
 import time
 import json
-
 from tornado.httpclient import AsyncHTTPClient, HTTPRequest
 from constants import *
+import sqlalchemy.orm.exc
 
 from handlers.BaseHandler import BaseHandler
+from models.players import Players
 
 
 class AccessToken(object):
@@ -82,24 +83,12 @@ class WechatHandler(BaseHandler):
         if msg_type == "text":
             content_tmp = dict_data["xml"]["Content"]
             print("*********************")
-            if bytes(content_tmp, encoding="utf-8") == (bytes("李红艳", encoding="utf-8")):
-                # print("OKOKOKOKOKOK")
+            if bytes(content_tmp, encoding="utf-8") == (bytes("Alex", encoding="utf-8")):
                 content = "聪明聪明"
             else:
-                content = "%s是笨蛋超级大笨蛋" % content_tmp
-            # dict_data["xml"]["Content"]
-            # resp_data = """<xml>
-            #         <ToUserName><![CDATA[{0}]]></ToUserName>
-            #         <FromUserName><![CDATA[{1}]]></FromUserName>
-            #         <CreateTime>{2}</CreateTime>
-            #         <MsgType><![CDATA[text]]></MsgType>
-            #         <Content><![CDATA[{3}]]></Content>
-            #         </xml>
-            #       """.format(to_user, from_user, c_time, content)
-            #
+                content = "%s是什么意思" % content_tmp
         elif msg_type == "event":
             content = "您总算是来了呀"
-            # print(dict_data)
             if dict_data["xml"]["Event"] == "subscribe":
                 """用户关注事件"""
                 if not(dict_data["xml"]["EventKey"] is None):
@@ -158,48 +147,66 @@ class ProfileHandler(BaseHandler):
     def __create_user(self, ):
         pass
 
-    def unionid_is_exist(self, tmp_unionid):
-        sql = 'SELECT * FROM players WHERE unionid = %s'
-        res_by_unionid = self.db.get(sql, tmp_unionid)
-        if res_by_unionid:
-            return res_by_unionid
-        else:
-            return False
-
     @tornado.gen.coroutine
     def get(self, *args, **kwargs):
         access_token = yield AccessToken.get_access_token()
         code = self.get_argument("code")
+        # print("code************", code)
         client = AsyncHTTPClient()
         url = "https://api.weixin.qq.com/sns/oauth2/access_token?" \
               "appid=%s&secret=%s&code=%s&grant_type=authorization_code" % (WECHAT_APPID, WECHAT_APPSECRET, code)
         resp = yield client.fetch(url)
         dict_data = json.loads(resp.body)
-        print("access!!!!!!!!!!!!!!!!!", resp.body)
+        # print("access!!!!!!!!!!!!!!!!!", resp.body)
         if "errcode" in dict_data:
             self.write("error occur")
         else:
-            # access_token = dict_data["access_token"]
             open_id = dict_data["openid"]
             url = "https://api.weixin.qq.com/cgi-bin/user/info" \
                   "?access_token=%s&openid=%s&lang=zh_CN" % (access_token, open_id)
-            print("11111111111111111111111111")
             resp = yield client.fetch(url)
-            # try:
-            #     print(resp.body)
-            # except Exception as e:
-            #     pass
             user_data = json.loads(resp.body)
-            if "errcode" in user_data:
-                self.write("error occur at get info from wechat")
+            # self.write(user_data)
+            subscribe = user_data["subscribe"]
+            if subscribe == 0:
+                self.write("Must Subscribe Official Accounts ")
             else:
-                unionid = user_data["unionid"]
-                player_by_unionid = self.unionid_is_exist(unionid)
-                if player_by_unionid:
-                    self.write(player_by_unionid)
+                unionid = user_data['unionid']
+                nick_name = user_data['nickname']
+                sex = user_data['sex']
+                avatar = user_data['headimgurl']
+                print("213------unionid==", unionid)
+                if "errcode" in user_data:
+                    self.write("error occur at get info from wechat")
                 else:
-                    # self.__create_user()
-                    self.write("don't exist")
+                    try:
+                        query_result = self.game_db.query(Players).filter(Players.unionid == unionid).one()
+                        if query_result.agent != 0:
+                            # 普通用户不允许登陆逻辑
+                            self.write("You Are Not Authorized User")
+                        elif query_result.agent == 1:
+                            # 普通代理登陆逻辑
+                            self.write("Normal Agent User")
+                        elif query_result.agent == 2:
+                            # VIP代理登陆逻辑
+                            self.write("VIP Agent User")
+                    except sqlalchemy.orm.exc.NoResultFound:
+                        # 用户之前没有登录过，自动绑定，插入一条记录
+                        # print("begin")
+                        # print(nick_name, ' ', sex, ' ', avatar, ' ', unionid, ' ', open_id)
+
+                        # new_player = Players(nick_name=nick_name, unionid=unionid,  sex=sex, avatar=avatar,
+                        #                      openid=open_id)
+                        # self.game_db.add(new_player)
+                        # self.game_db.commit()
+                        # print("done")
+                        # self.write("ok")
+                        # 用户没有注册过，不允许登陆，提示下载游戏完成注册
+                        self.write("Download the game and register please")
+
+
+
+
     """
     用户最终访问的URL网址
     https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf5a0ff0a7fe1c69b&redirect_uri=http%3A//wechat.hnbdfyy.com.cn/wechat8000/profile&response_type=code&scope=snsapi_userinfo&state=1#wechat _redirect

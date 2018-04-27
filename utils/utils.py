@@ -3,16 +3,18 @@ import hashlib
 import datetime
 import json
 import random
-import server
-import os
 # from api.wechat import conf
 # from urllib.parse import quote
 from PIL import Image
+import utils.redis_cli
+
 
 from jsmin import jsmin
-from models.base_model import redis_client
+# from models.base_model import redis_client
 # import qrcode
 import uuid
+
+redis_client = utils.redis_cli.redis_client
 
 
 # 返回 月日 时分秒 的时间字符串
@@ -59,13 +61,12 @@ def uuid4():
 
 
 # 从 Redis 中返回一个新的 UID
-def make_uid(self):
+def make_uid():
     key = "all_uids"
     uid = redis_client.spop(key)
     if not uid:
         return 0
     return int(uid)
-
 
 
 def create_qr_code(uid, croped_im):
