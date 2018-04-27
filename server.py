@@ -6,6 +6,8 @@ import config
 import utils.database
 from sqlalchemy.orm import sessionmaker, scoped_session
 
+
+import utils.redis_cli
 from tornado.options import define, options
 from urls import handlers
 
@@ -28,6 +30,7 @@ class Application(tornado.web.Application):
                                                    autocommit=False, autoflush=True,
                                                    expire_on_commit=False))
 
+        self.redis = utils.redis_cli.redis_client
 
 def main():
 

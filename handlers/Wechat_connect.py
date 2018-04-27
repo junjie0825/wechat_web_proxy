@@ -7,6 +7,7 @@ import json
 from tornado.httpclient import AsyncHTTPClient, HTTPRequest
 from constants import *
 import sqlalchemy.orm.exc
+from utils.session import Session
 
 from handlers.BaseHandler import BaseHandler
 from models.players import Players
@@ -180,21 +181,34 @@ class ProfileHandler(BaseHandler):
                     self.write("error occur at get info from wechat")
                 else:
                     try:
+                        # 0=普通用户  1=普通代理  2=VIP代理
                         query_result = self.game_db.query(Players).filter(Players.unionid == unionid).one()
-                        if query_result.agent != 0:
-                            # 普通用户不允许登陆逻辑
-                            self.write("You Are Not Authorized User")
-                        elif query_result.agent == 1:
+                        if query_result.agent == 1:
                             # 普通代理登陆逻辑
+                            session = Session(self)
+                            session.data["agent"] = "1"
+                            session.data["unionid"] = query_result['uid']
+
                             self.write("Normal Agent User")
+
                         elif query_result.agent == 2:
                             # VIP代理登陆逻辑
+                            session = Session(self)
+                            session.data["agent"] = "2"
+                            session.data["unionid"] = query_result['uid']
+
                             self.write("VIP Agent User")
+                        else:
+                            # 普通用户不允许登陆逻辑
+                            session = Session(self)
+                            session.data["agent"] = "0"
+                            session.data["unionid"] = query_result['uid']
+
+                            self.write("You Are Not Authorized User")
                     except sqlalchemy.orm.exc.NoResultFound:
                         # 用户之前没有登录过，自动绑定，插入一条记录
                         # print("begin")
                         # print(nick_name, ' ', sex, ' ', avatar, ' ', unionid, ' ', open_id)
-
                         # new_player = Players(nick_name=nick_name, unionid=unionid,  sex=sex, avatar=avatar,
                         #                      openid=open_id)
                         # self.game_db.add(new_player)
