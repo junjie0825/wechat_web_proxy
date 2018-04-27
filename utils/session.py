@@ -16,6 +16,11 @@ class Session(object):
         self.request_handler = request_handler
         # 从请求中读取cookie获取session_id
         self.sid = request_handler.get_secure_cookie("session_id")
+        if isinstance(self.sid, bytes):
+            self.sid = str(self.sid, encoding="utf-8")
+        print("*****************")
+        print("!!!!!!!!!!!!!!!!!!!!get_secure_cookie", self.sid)
+        print("get_secure_cookie,type=", type(self.sid))
         if self.sid:
             try:
                 session_data = request_handler.redis.get("sess_%s" % self.sid)
@@ -30,7 +35,9 @@ class Session(object):
                 self.data = {}
         # 如用户未session_id，需要新生成一个session_id与这个用户对应
         else:
-            self.sid = uuid.uuid4().get_hex()
+            self.sid = uuid.uuid4().hex
+            print("type=", type(self.sid))
+            print(self.sid)
             self.data = {}
             self.request_handler.set_secure_cookie("session_id", self.sid)
 
